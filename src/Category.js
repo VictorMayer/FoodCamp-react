@@ -14,14 +14,13 @@ export default function Category(props){
                         title={card.title}
                         description={card.description}
                         price={card.price}
-                        // prato={props.prato}
-                        // bebida={props.bebida}
-                        // sobremesa={props.sobremesa}
-                        // setPrato={props.setPrato}
-                        // setBebida={props.setBebida}
-                        // setSobremesa={props.setSobremesa}
-                        // makeOrder={props.makeOrder}
-                        // setMakeOrder={props.setMakeOrder}
+                        prato={props.prato}
+                        bebida={props.bebida}
+                        sobremesa={props.sobremesa}
+                        setPrato={props.setPrato}
+                        setBebida={props.setBebida}
+                        setSobremesa={props.setSobremesa}
+                        setMakeOrder={props.setMakeOrder}
                         />
                     ))}
                 </div>

@@ -38,10 +38,9 @@
         ]
     }];
 
-    // const [prato,setPrato] = React.useState(false);
-    // const [bebida,setBebida] = React.useState(false);
-    // const [sobremesa,setSobremesa] = React.useState(false);
-    const [makeOrder, setMakeOrder] = React.useState(false);
+    const [prato,setPrato] = React.useState([]);
+    const [bebida,setBebida] = React.useState([]);
+    const [sobremesa,setSobremesa] = React.useState([]);
 
      return(
     <>
@@ -52,18 +51,16 @@
                         key={i} 
                         title={categories.categoryTitle}
                         cards={categories.cards}
-                        // prato={prato}
-                        // bebida={bebida}
-                        // sobremesa={sobremesa}
-                        // setPrato={setPrato}
-                        // setBebida={setBebida}
-                        // setSobremesa={setSobremesa}
-                        // makeOrder={makeOrder}
-                        // setMakeOrder={setMakeOrder}
+                        prato={prato}
+                        bebida={bebida}
+                        sobremesa={sobremesa}
+                        setPrato={setPrato}
+                        setBebida={setBebida}
+                        setSobremesa={setSobremesa}
                         />
                 ))}
         </div>
-        <FinalizarPedido makeOrder={makeOrder}/>
+        <FinalizarPedido prato={prato} bebida={bebida} sobremesa={sobremesa}/>
     </>
      )
  }
